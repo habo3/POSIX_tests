@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		735B61C119E5E1B900C8B496 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 735B61C019E5E1B900C8B496 /* main.c */; };
+		735B61D119E5E43C00C8B496 /* main_conditions.c in Sources */ = {isa = PBXBuildFile; fileRef = 735B61D019E5E43C00C8B496 /* main_conditions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		735B61BB19E5E1B900C8B496 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		735B61CB19E5E40C00C8B496 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		735B61BD19E5E1B900C8B496 /* POSIX_threads */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = POSIX_threads; sourceTree = BUILT_PRODUCTS_DIR; };
 		735B61C019E5E1B900C8B496 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		735B61CF19E5E40C00C8B496 /* POSIX_threads copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "POSIX_threads copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		735B61D019E5E43C00C8B496 /* main_conditions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main_conditions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		735B61BA19E5E1B900C8B496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		735B61CA19E5E40C00C8B496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				735B61BD19E5E1B900C8B496 /* POSIX_threads */,
+				735B61CF19E5E40C00C8B496 /* POSIX_threads copy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				735B61C019E5E1B900C8B496 /* main.c */,
+				735B61D019E5E43C00C8B496 /* main_conditions.c */,
 			);
 			path = POSIX_threads;
 			sourceTree = "<group>";
@@ -80,6 +101,23 @@
 			name = POSIX_threads;
 			productName = POSIX_threads;
 			productReference = 735B61BD19E5E1B900C8B496 /* POSIX_threads */;
+			productType = "com.apple.product-type.tool";
+		};
+		735B61C719E5E40C00C8B496 /* POSIX_conditions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 735B61CC19E5E40C00C8B496 /* Build configuration list for PBXNativeTarget "POSIX_conditions" */;
+			buildPhases = (
+				735B61C819E5E40C00C8B496 /* Sources */,
+				735B61CA19E5E40C00C8B496 /* Frameworks */,
+				735B61CB19E5E40C00C8B496 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = POSIX_conditions;
+			productName = POSIX_threads;
+			productReference = 735B61CF19E5E40C00C8B496 /* POSIX_threads copy */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,6 +147,7 @@
 			projectRoot = "";
 			targets = (
 				735B61BC19E5E1B900C8B496 /* POSIX_threads */,
+				735B61C719E5E40C00C8B496 /* POSIX_conditions */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +158,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				735B61C119E5E1B900C8B496 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		735B61C819E5E40C00C8B496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				735B61D119E5E43C00C8B496 /* main_conditions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +260,20 @@
 			};
 			name = Release;
 		};
+		735B61CD19E5E40C00C8B496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "POSIX_threads copy";
+			};
+			name = Debug;
+		};
+		735B61CE19E5E40C00C8B496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "POSIX_threads copy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -232,6 +293,15 @@
 				735B61C619E5E1B900C8B496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		735B61CC19E5E40C00C8B496 /* Build configuration list for PBXNativeTarget "POSIX_conditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				735B61CD19E5E40C00C8B496 /* Debug */,
+				735B61CE19E5E40C00C8B496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
